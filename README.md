@@ -55,4 +55,3 @@ The mathematical foundation of this project is based on established computer sci
 
 ---
 *Created as an Engineering Degree Project.*
-```eof
