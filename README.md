@@ -8,8 +8,6 @@ A high-performance, procedural voxel terrain engine built in Unity. This project
 
 This repository was created as an Engineering Degree Project, focusing on **architecture scalability, GPU rendering optimization**, and **advanced mathematical algorithms** for game development.
 
-![Voxel Terrain Screenshot](Screenshot%202026-07-14%20at%2022.06.26.jpg)
-
 ## 🚀 Key Features & Algorithms
 
 ### 1. Fractal Brownian Motion (fBm) Terrain
@@ -32,22 +30,18 @@ No GameObjects or Prefabs are instantiated for blocks. Instead, entire 16x128x16
 
 ---
 
-## 🛠️ Project Structure & Setup
+## 🎮 How to Run the Playable Prototype
 
-This repository contains the necessary scripts, materials, and settings to run the Voxel Engine.
+This repository contains a pre-built Windows executable. You do not need the Unity Editor to run this project.
 
-*   `Chunk.cs` - The core multi-threaded generator, handling noise math, voxel mapping, and mesh building.
-*   `VoxelData.cs` - A static geometry lookup table containing raw vertex, triangle, and face-check vector definitions.
-*   `DayNightCycle.cs` - A lightweight script controlling the directional light to simulate sun movement.
-*   **Custom Shader / Material** - Built with Unity Universal Render Pipeline (URP) to support custom Vertex Colors for Ambient Occlusion and Alpha Clipping for plants (grass/flowers are rendered as double-sided, intersecting planes).
+1. Download the repository to your computer (Click **Code** -> **Download ZIP** and extract it).
+2. Open the extracted folder.
+3. Double-click the **`Projekt_inzynierski.exe`** file to launch the application.
 
-### How to Run
-
-1. Clone or download this repository.
-2. Open the project in **Unity 2022.3 LTS** (or newer) with **Universal Render Pipeline (URP)** installed.
-3. Open the main scene.
-4. Ensure your Materials (Atlas or Individual) have **Alpha Clipping** enabled and **Render Face** set to `Both` (for plants).
-5. Hit **Play** and explore the infinite procedural world!
+### Controls
+*   **W, A, S, D** - Move around
+*   **Mouse** - Look around
+*   **Space** - Jump
 
 ---
 
@@ -61,3 +55,4 @@ The mathematical foundation of this project is based on established computer sci
 
 ---
 *Created as an Engineering Degree Project.*
+```eof
